@@ -1,8 +1,6 @@
 {
-  "enabled": true,
-  "latestVersion": "1.0.1",
-  "minVersion": "1.0.1",
-  "force": true,
-  "title": "Actualización obligatoria",
-  "message": "Debes actualizar TsOrbit Coins para continuar. Esta actualización no se puede omitir."
+  "enabled": false,
+  "latestVersion": "1.0.0",
+  "minVersion": "1.0.0",
+  "force": false
 }
