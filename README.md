@@ -1,17 +1,19 @@
 # Actualizaciones TsOrbit Coins
 
-Manifest remoto servido en Cloudflare Pages:
+Sitio: `https://actualizacionescoinstsorbit.pages.dev`
 
-`https://actualizacionescoinstsorbit.pages.dev/update.json`
+La app solo usa ese link. Al tocar **Actualizar ahora** abre esta página para descargar.
 
-## Publicar una update
+## Cómo publicar una update
 
-1. Sube el APK a `public/downloads/tsorbit-coins.apk` (o cambia `downloadUrl`).
-2. Edita `public/update.json`:
-   - `latestVersion`: versión nueva (ej. `1.0.2`)
-   - `minVersion`: mínimo obligatorio (si la app está por debajo → update forzada)
-   - `force`: `true` para bloquear “Más tarde”
-   - `enabled`: `false` para desactivar el modal
-3. Commit + push a `main` (Actions despliega Pages).
+1. Sube el APK (o el instalador) a `public/` (ej. `public/tsorbit-coins.apk`).
+2. Edita `public/update.json` en este repo (versión, título, mensaje, `enabled: true`).
+3. Push a `main` → se despliega en Pages.
 
-La app compara contra su `APP_VERSION` en `src/appVersion.ts` / `app.json`.
+Campos de `update.json` (todo remoto, nada en la app):
+
+- `enabled` — si `false`, no muestra modal
+- `latestVersion` — versión nueva
+- `minVersion` — si la app está por debajo, fuerza update
+- `force` — oculta “Más tarde”
+- `title` / `message` / `changelog` — texto del modal
