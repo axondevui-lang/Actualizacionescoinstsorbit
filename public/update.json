@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "latestVersion": "1.0.1",
+  "minVersion": "1.0.0",
+  "force": false,
+  "title": "Nueva actualización de TsOrbit",
+  "message": "Hay una nueva versión de TsOrbit Coins. Actualiza para seguir recibiendo mejoras.",
+  "changelog": [
+    "Inicio del sistema de actualizaciones remotas",
+    "Mejoras generales de la app"
+  ],
+  "downloadUrl": "https://actualizacionescoinstsorbit.pages.dev/downloads/tsorbit-coins.apk",
+  "publishedAt": "2026-09-12T01:30:00Z"
+}
